@@ -9,7 +9,7 @@ export const OpenTerminal = {
   execute (result) {
     console.log('opening term at' + result)
 
-		script = 'if [[ -d "$result" ]]; then open -a Terminal "$result" elif [[ -f "$result" ]]; then open -a Terminal "$(dirname "$result")" else osascript -e \'display notification "Could not run Lacona command"\' fi '
+		script = 'if [[ -d "${result}" ]]; then open -a Terminal "${result}" elif [[ -f "${result}" ]]; then open -a Terminal "$(dirname "${result}")" else osascript -e \'display notification "Could not run Lacona command"\' fi '
     callSystem({command: script, args: []}, function() {})
   },
 
