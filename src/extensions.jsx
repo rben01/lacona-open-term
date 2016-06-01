@@ -24,11 +24,7 @@ export const OpenTerminal = {
   describe () {
     return (
 				<sequence>
-					<choice>
-						<literal text='open terminal ' />
-						<literal text='terminal ' />
-					</choice>
-					<literal text='window at ' />
+					<literal text='new terminal window at ' />
 					<File id='filepath' />
 				</sequence>
     )

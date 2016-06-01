@@ -25,13 +25,7 @@ var OpenTerminal = exports.OpenTerminal = {
 		return (0, _elliptical.createElement)(
 			'sequence',
 			null,
-			(0, _elliptical.createElement)(
-				'choice',
-				null,
-				(0, _elliptical.createElement)('literal', { text: 'open terminal ' }),
-				(0, _elliptical.createElement)('literal', { text: 'terminal ' })
-			),
-			(0, _elliptical.createElement)('literal', { text: 'window at ' }),
+			(0, _elliptical.createElement)('literal', { text: 'new terminal window at ' }),
 			(0, _elliptical.createElement)(_laconaPhrases.File, { id: 'filepath' })
 		);
 	}
